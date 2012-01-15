@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @task.subject %>
+</p>
+
+<p>
+  <b>Assigned to:</b>
+  <% if @task.user -%>
+  <%= @task.user.name %> <%= "<" + @task.user.email + ">" %>
+  <% end -%>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
