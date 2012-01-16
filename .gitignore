@@ -22,3 +22,6 @@ db/*.sqlite3*
 # Docs
 doc/
 help/
+
+# Ignore assets, not sure where these should be really compiled to be honest
+public/assets
