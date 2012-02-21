@@ -45,4 +45,5 @@ end
 
 group :development do
   gem 'heroku'
+  gem 'minitest'
 end
